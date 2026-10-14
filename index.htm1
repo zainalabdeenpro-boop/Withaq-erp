@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WITHAQ ERP | نظام وثاق الإداري</title>
+<style>
+:root {
+  --wine: #641c32;
+  --wine-dark: #39101e;
+  --gold: #c9a45c;
+  --bg: #f5f3f0;
+  --white: #ffffff;
+  --text: #302a2c;
+  --muted: #777078;
+  --border: #e9e3e5;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+header {
+  background: linear-gradient(120deg,var(--wine-dark),var(--wine));
+  color: white;
+  padding: 22px;
+  border-bottom: 4px solid var(--gold);
+}
+.brand {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.brand span { color: var(--gold); }
+header p { margin: 8px 0 0; font-size: 13px; color: #eee0e5; }
+.layout { display: flex; min-height: calc(100vh - 100px); }
+nav {
+  width: 235px;
+  background: white;
+  padding: 18px 12px;
+  border-left: 1px solid var(--border);
+  flex-shrink: 0;
+}
+nav button {
+  display: block;
+  width: 100%;
+  padding: 13px 12px;
+  margin-bottom: 5px;
+  border: 0;
+  border-radius: 7px;
+  background: white;
+  text-align: right;
+  font: inherit;
+  color: var(--text);
+  cursor: pointer;
+}
+nav button:hover, nav button.active {
+  background: var(--wine);
+  color: white;
+}
+main { flex: 1; padding: 25px; min-width: 0; }
+h1 { font-size: 23px; margin-top: 0; }
+.subtitle { color: var(--muted); font-size: 13px; margin-bottom: 22px; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 14px;
+  margin-bottom: 25px;
+}
+.card, .panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  padding: 19px;
+}
+.card { border-top: 3px solid var(--gold); }
+.card .label { font-size: 13px; color: var(--muted); }
+.card .number { font-size: 25px; font-weight: bold; margin-top: 13px; color: var(--wine); }
+.panel { margin-bottom: 20px; }
+.panel h2 { font-size: 17px; margin-top: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th,td { padding: 12px 8px; text-align: right; border-bottom: 1px solid var(--border); }
+th { background: #f8f4f5; color: var(--wine); }
+button.primary {
+  background: var(--wine);
+  color: white;
+  border: 0;
+  padding: 11px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font:
